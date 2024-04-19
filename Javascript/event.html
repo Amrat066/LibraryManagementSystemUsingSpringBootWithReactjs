@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <button id="button">Click Me</button>
+
+    <script>
+      var btn = document.getElementById('button')
+
+      // String value
+      const string = 'My string value'
+
+      // Adding an event listener
+      btn.addEventListener(
+        'click',
+        function () {
+          console.log(this)
+        }.bind(string),
+      )
+    </script>
+  </body>
+</html>
